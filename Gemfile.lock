@@ -44,17 +44,23 @@ GEM
     erubis (2.7.0)
     execjs (1.2.6)
       multi_json (~> 1.0)
+    highline (1.6.2)
     hike (1.2.1)
+    httparty (0.8.0)
+      multi_json
+      multi_xml
     i18n (0.6.0)
     jquery-rails (1.0.14)
       railties (~> 3.0)
       thor (~> 0.14)
+    json (1.6.0)
     mail (2.3.0)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.3)
+    multi_xml (0.4.0)
     polyglot (0.3.2)
     rack (1.3.2)
     rack-cache (1.0.3)
@@ -93,6 +99,17 @@ GEM
       rack (~> 1.0)
       tilt (!= 1.3.0, ~> 1.1)
     sqlite3 (1.3.4)
+    tddium-preview (0.8.1)
+      bundler
+      highline
+      json
+      tddium_client (>= 0.0.10)
+      tddium_reporting (>= 0.0.3)
+      thor
+    tddium_client (0.0.10)
+      httparty
+      json
+    tddium_reporting (0.0.4)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -114,5 +131,6 @@ DEPENDENCIES
   rails (= 3.1.0)
   sass-rails (~> 3.1.0)
   sqlite3
+  tddium-preview
   turn
   uglifier
